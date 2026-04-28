@@ -4,8 +4,6 @@
 
 To create two specific classes — `Beans` and `Mango`. Then, create a **generic function** that can accept any object and determine its **type** (Fruit or Vegetable) and **color**, using polymorphism.
 
----
-
 ## 🧠 ALGORITHM
 
 1. **Create Class `Beans`**:
@@ -23,10 +21,26 @@ To create two specific classes — `Beans` and `Mango`. Then, create a **generic
    - Instantiate `Beans` and `Mango`.
    - Pass them to `func()` and execute the program.
 
----
-
 ## 💻 Program
-
+~~~
+class Beans(): 
+     def type(self): 
+       print("Vegetable") 
+     def color(self):
+       print("Green") 
+class Mango(): 
+     def type(self): 
+       print("Fruit") 
+     def color(self): 
+       print("Yellow")
+obj_beans = Beans() 
+obj_mango = Mango()
+for func in (obj_beans,obj_mango): 
+    func.type()
+    func.color()
+~~~
 ## Output
+<img width="263" height="222" alt="image" src="https://github.com/user-attachments/assets/2d6a5558-7aeb-47fc-bcce-50c630e30e69" />
 
 ## Result
+Thus,the program is executed successfully.
